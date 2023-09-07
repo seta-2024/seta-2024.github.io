@@ -1,1 +1,0 @@
-# seta-2024.github.io
