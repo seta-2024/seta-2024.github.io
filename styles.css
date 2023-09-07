@@ -55,3 +55,15 @@ footer {
     color: #fff;
     padding: 1rem 0;
 }
+/* ... previous CSS styles ... */
+
+.center {
+    text-align: center;
+}
+
+.center img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ... continue with the rest of your CSS styles ... */
