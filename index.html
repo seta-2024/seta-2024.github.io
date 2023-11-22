@@ -2,22 +2,30 @@
 <html lang="en">
 
 <head>
+    <title>Sequences and Their Applications SETA 2024</title>
+    <base href="" />
+    <link rel="canonical" href="index.html" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sequences and Their Applications (SETA) - SETA-2024</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <h1>Sequences and Their Applications (SETA)</h1>
         <h3>SETA-2024</h3>
         <p>July 01-05, 2024, Colchester, United Kingdom</p>
-    </header>
+        <img src="images/Picture 1.jpg" alt="Banner Image">
+    </header> -->
 
-    <nav>
+    
+    <nav id="navbar">
         <ul>
+            <div class="brand">SETA2024</div>
             <li><a href="#about">About</a></li>
             <li><a href="#speakers">Speakers</a></li>
             <li><a href="#schedule">Schedule</a></li>
@@ -25,6 +33,28 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <div class="banner">
+        <h1>Sequences and Their Applications (SETA)</h1>
+        <h3>SETA-2024</h3>
+        <p>July 01-05, 2024, Colchester, United Kingdom</p>
+    </div>
+
+
+    <script>
+        window.onscroll = function () { stickyNavbar() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickyNavbar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.style.top = "0";
+            } else {
+                navbar.style.top = "-60px"; /* 设置一个负值，隐藏导航栏 */
+            }
+        }
+    </script>
+
 
     <section id="about">
         <h2>Call for Papers</h2>
@@ -33,84 +63,98 @@
             interactions among sequences, signals, and waveforms designers, mathematicians, coding theorists,
             cryptographic researchers, and communications practitioners from all over the world. This esteemed
             conference has been hosted in a variety of international locales:<a
-                href="https://link.springer.com/book/10.1007/978-1-4471-0551-0">SETA-1998</a>(Singapore),<a href="https://link.springer.com/book/10.1007/978-1-4471-0673-9">SETA-2001</a>(Bergen Norway),<a href="https://link.springer.com/book/10.1007/b136167">SETA-2004</a>(Seoul,South Korea),<a
+                href="https://link.springer.com/book/10.1007/978-1-4471-0551-0">SETA-1998</a>(Singapore),<a
+                href="https://link.springer.com/book/10.1007/978-1-4471-0673-9">SETA-2001</a>(Bergen Norway),<a
+                href="https://link.springer.com/book/10.1007/b136167">SETA-2004</a>(Seoul,South Korea),<a
                 href="https://link.springer.com/book/10.1007/11863854">SETA-2006</a>(Beijing,China),<a
                 href="https://link.springer.com/book/10.1007/978-3-540-85912-3">SETA-2008</a>(Lexington USA),<a
-                href="https://link.springer.com/book/10.1007/978-3-642-15874-2">SETA-2010</a>(Paris,France),<a href="https://link.springer.com/book/10.1007/978-3-642-30615-0">SETA-2012</a>(Waterloo,Canada),<a
+                href="https://link.springer.com/book/10.1007/978-3-642-15874-2">SETA-2010</a>(Paris,France),<a
+                href="https://link.springer.com/book/10.1007/978-3-642-30615-0">SETA-2012</a>(Waterloo,Canada),<a
                 href="https://link.springer.com/book/10.1007/978-3-319-12325-7">SETA-2014</a>(Melbourne, Australia),<a
                 href="https://link.springer.com/collections/aafehjebee">SETA-2016</a>(Chengdu,China),<a
                 href="https://link.springer.com/collections/behgdjbgdc">SETA-2018</a>(HongKong,China),<a
                 href="https://link.springer.com/journal/12095/volumes-and-issues/14-2">SETA-2020</a>online(Bergen,Norway).
         </p>
         <br>
-        <div class="row">
-            <div class = "col-md-5">
-                <h2>Important Dates</h2>
-                <ul>
-                    <li>March 15th, 2024: Deadline for submission</li>
-                    <li>April 1st, 2024: Open for registration</li>
-                    <li>April 30th, 2024: Acceptance notification</li>
-                    <li>May 30th, 2024: Final submission</li>
-                    <li>Sept. 30th, 2024: Submission of full Papers</li>
-                </ul>
-            </div>
-            <div class = "col-md-7">
-                <h2>Invited Speakers(to be confirmed)</h2>
-                <ul>
-                    <li>Nam Yul Yu, GIST College, Korea</li>
-                    <li>James Davis, University of Richmond, USA</li>
-                    <li>Petre Stoica, Uppsala University, Sweden</li>
-                    <li>Pingzhi Fan, Southwest Jiaotong University, China</li>
-                    <li>James Maynard FRS. University of Oxford, United Kingdom</li>
-                </ul> 
+        <div class = "container text-right">
+            <div class="row row-cols-2"> 
+                <div class="col-md-5">
+                    <h2 class="text-body-emphasis">Important Dates</h2>  
+                    <ul>
+                        <li>March 15th, 2024: Deadline for submission</li>
+                        <li>April 1st, 2024: Open for registration</li>
+                        <li>April 30th, 2024: Acceptance notification</li>
+                        <li>May 30th, 2024: Final submission</li>
+                        <li>Sept. 30th, 2024: Submission of full Papers</li>
+                    </ul>
+                </div>
+                <!-- <div class="col-md-7">
+                    <h2>Invited Speakers(to be confirmed)</h2>
+                    <ul>
+                        <li>Nam Yul Yu, GIST College, Korea</li>
+                        <li>James Davis, University of Richmond, USA</li>
+                        <li>Petre Stoica, Uppsala University, Sweden</li>
+                        <li>Pingzhi Fan, Southwest Jiaotong University, China</li>
+                        <li>James Maynard FRS. University of Oxford, United Kingdom</li>
+                    </ul>
+                </div> -->
             </div>
         </div>
         <br>
-        <p>
-            The topics of this workshop include, but are not limited to:
-        </p>
-        <h4>Sequences in District Structure</h4>
-        <ul>
-            <li>Sequences over finite fields/rings</li>
-            <li>Shift register sequences</li>
-            <li>Boolean functions and their cryptographic criteria</li>
-            <li>Zero/Low-correlation sequences</li>
-            <li>Low PAPR sequences</li>
-            <li>Complementary sequences</li>
-            <li>Combinatorial aspects of sequences</li>
-            <li>Number-theoretic aspects of sequences</li>
-            <li>Multidimensional sequences and arrays, Costas array</li>
-        </ul>
-        <h4>Sequences for Cryptography and Coding</h4>
-        <ul>
-            <li>Stream ciphers</li>
-            <li>Complexity measures of sequences</li>
-            <li>Randomness properties of sequences</li>
-            <li>Design and decoding of error-correction codes</li>
-            <li>Quantum coding theory</li>
-        </ul>
-        <h4>Sequences and Waveforms Design for Communication and Radar</h4>
-        <ul>
-            <li>Frequency Hopping Sequences</li>
-            <li>Spectrum Spreading Sequences</li>
-            <li>Non-orthogonal Multiple Access, e.g., code-domain NOMA</li>
-            <li>Cognitive radio/radar</li>
-            <li>Channel estimation</li>
-            <li>Synchronization</li>
-            <li>Signal Detection Theory</li>
-            <li>Signal Processing</li>
-            <li>MIMO communication/ radar</li>
-        </ul>
-        <h4>Next-generation Sequences Design</h4>
-        <ul>
-            <li>Deep learning-aided design of waveforms, codebooks, and channel codes</li>
-            <li>Adaptive learning for channel estimation and signal detection</li>
-            <li>Integrated sensing and communication</li>
-            <li>Massive machine-type communication</li>
-        </ul>
-        
+       
+        <div class = "container text-right">
+            <p>
+                The topics of this workshop include, but are not limited to:
+            </p>
+            <div class="row row-cols-2"> 
+                <div class="col-md-5">
+                    <h4>Sequences in District Structure</h4>
+                    <ul>
+                        <li>Sequences over finite fields/rings</li>
+                        <li>Shift register sequences</li>
+                        <li>Boolean functions and their cryptographic criteria</li>
+                        <li>Zero/Low-correlation sequences</li>
+                        <li>Low PAPR sequences</li>
+                        <li>Complementary sequences</li>
+                        <li>Combinatorial aspects of sequences</li>
+                        <li>Number-theoretic aspects of sequences</li>
+                        <li>Multidimensional sequences and arrays, Costas array</li>
+                    </ul>
+                    <h4>Sequences for Cryptography and Coding</h4>
+                    <ul>
+                        <li>Stream ciphers</li>
+                        <li>Complexity measures of sequences</li>
+                        <li>Randomness properties of sequences</li>
+                        <li>Design and decoding of error-correction codes</li>
+                        <li>Quantum coding theory</li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <h4>Sequences and Waveforms Design for Communication and Radar</h4>
+                    <ul>
+                        <li>Frequency Hopping Sequences</li>
+                        <li>Spectrum Spreading Sequences</li>
+                        <li>Non-orthogonal Multiple Access, e.g., code-domain NOMA</li>
+                        <li>Cognitive radio/radar</li>
+                        <li>Channel estimation</li>
+                        <li>Synchronization</li>
+                        <li>Signal Detection Theory</li>
+                        <li>Signal Processing</li>
+                        <li>MIMO communication/ radar</li>
+                    </ul>
+                    <h4>Next-generation Sequences Design</h4>
+                    <ul>
+                        <li>Deep learning-aided design of waveforms, codebooks, and channel codes</li>
+                        <li>Adaptive learning for channel estimation and signal detection</li>
+                        <li>Integrated sensing and communication</li>
+                        <li>Massive machine-type communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="committees">
+
+    <!--<section id="committees">
         <!-- <div class="container-fluid">
             <div class="row">
                 <aside id="aside" class="col-lg-2">
@@ -119,7 +163,7 @@
            
                 </div>
             </div>
-        </div> -->
+        </div> 
         <h2>General Co-chair</h2>
         <ul>
             <li>Tor Helleseth, University of Bergen, Norway</li>
@@ -159,7 +203,7 @@
             <li>Arne Winterhof, Austrian Academy of Sciences, Austria</li>
             <li>Yang Yang, Southwest Jiaotong University, China</li>
         </ul>
-    </section>
+    </section>-->
 
     <section id="qr-code">
         <div class="center">
@@ -175,7 +219,9 @@
     <footer>
         <p>&copy; SETA-2024</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
