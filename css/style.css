@@ -269,13 +269,13 @@ body {
     
     
     /*  ----------------footer---------------------- */ 
-    #footer {
+/*     #footer {
     clear:left;
     padding-right: 2px;
     padding-bottom:7px;
     margin: 10px;
     text-align: center; 
-    }  
+    }   */
     
     #footer {
         background-color:rgb(45 66 99);
@@ -289,7 +289,7 @@ body {
         vertical-align: bottom;
         margin-right: auto;
         margin-left: auto;
-        position:relative;
+        position: absolute;
     }
 
     #page-title{
