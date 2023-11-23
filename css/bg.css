@@ -16,7 +16,18 @@
   }
 
   /* 添加样式以高亮显示文本 */
-  .highlight-text {
-    color: red; /* 设置文本颜色 */
-    font-weight: bold; /* 设置文本粗细 */
-  }
+.highlight-text {
+  color: red; /* 设置文本颜色 */
+  font-weight: bold; /* 设置文本粗细 */
+}
+
+.navbar-brand{
+  font-family: Cinzel;
+}
+
+.carousel{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
