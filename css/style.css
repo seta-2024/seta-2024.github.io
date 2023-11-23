@@ -62,12 +62,12 @@ body {
     /* ----------container zentriert das layout-------------- */
     
     #container {
-    width: 80%;
+    width: 100%;
     padding:0px;
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: rgb(249, 247, 247);
     height:auto;
     } 
     
@@ -149,13 +149,21 @@ body {
     
     /* ----------outer und inner----------------- */
     #outer{ 
-            background-color:white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        background-color:white;
     
      } 
     
     
     
-    #inner{ margin: 20px; width:100%; } 
+    #inner{ 
+        margin: 0%; 
+        width:70%;    
+        margin-left: auto;
+        margin-right: auto;
+    } 
     
     
     
@@ -265,6 +273,20 @@ body {
     padding-right: 2px;
     padding-bottom:7px;
     margin: 10px;
-    text-align: right; 
+    text-align: center; 
     }  
     
+    #footer {
+        background-color:rgb(45 66 99);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        bottom: 0;
+        width: 100%;
+        max-width:100%;
+        box-sizing: border-box;
+        vertical-align: bottom;
+        margin-right: auto;
+        margin-left: auto;
+        position:sticky;
+    }
