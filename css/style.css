@@ -13,7 +13,7 @@ body {
     .banner {
             width: 100%;
             max-width: 100%;
-            height: 300px;
+            height: auto;
         }
     
     a {color: #CC6600;}
