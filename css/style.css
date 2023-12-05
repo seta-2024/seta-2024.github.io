@@ -306,3 +306,12 @@ body {
         margin-bottom: 3rem;
         border-bottom: 1px solid #dee2e6;
       }
+
+    /* Style for the button to remove the border */
+    #toggleAbstractLink {
+            color: gray;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    #toggleAbstractLink:hover {
+        text-decoration: none;
