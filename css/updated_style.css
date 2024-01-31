@@ -1,6 +1,9 @@
 
 /* ------------------ Elementos generales -------------------------*/
-
+html, body {
+    height: 100%;
+    width: 100%;
+  }
 body {
     background-color: #AFEEEE; /* Pale Turquoise */
     font-size: 12px;
@@ -68,7 +71,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    height:auto;
+    height:100%;
     } 
     
     
@@ -153,7 +156,7 @@ body {
         margin-right: auto;
         width: 100%;
         background-color:white;
-    
+        padding-bottom: 20px;
      } 
     
     #inner{ 
@@ -289,7 +292,7 @@ body {
         vertical-align: bottom;
         margin-right: auto;
         margin-left: auto;
-        position:absolute;
+        position:relative;
     }
 
     #page-title{
