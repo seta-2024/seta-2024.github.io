@@ -289,7 +289,7 @@ body {
         vertical-align: bottom;
         margin-right: auto;
         margin-left: auto;
-        position:relative;
+        position:absolute;
     }
 
     #page-title{
