@@ -303,7 +303,7 @@ body {
         vertical-align: bottom;
         margin-right: auto;
         margin-left: auto;
-        position:absolute;
+        position:fixed;
     }
 
     #page-title{
@@ -321,3 +321,4 @@ body {
     #toggleAbstractLink:hover {
         text-decoration: none;
     }
+  

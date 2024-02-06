@@ -31,3 +31,8 @@
   margin-right: auto;
   text-align: center;
 }
+.btn{
+  border-radius: 0px;
+  border:rgb(45 66 99);
+  background-color: rgb(45 66 99);
+}
