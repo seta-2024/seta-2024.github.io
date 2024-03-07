@@ -36,3 +36,8 @@
   border:rgb(45 66 99);
   background-color: rgb(45 66 99);
 }
+tbody, td, tfoot, th, thead, tr{
+  border-color:#c8c6c6;
+  border-style: solid;
+  border-width: 0px; 
+  }
