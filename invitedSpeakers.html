@@ -278,7 +278,7 @@
 						<div class = "accordion-button collapsed" type = "button" style="padding: 3px 8px; font-size: 1rem;"
 						 data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"> <b>Biography</b>
 						</div>
-						<div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
+						<div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
 							<p style="text-align:justify!important;">
 								NAM YUL YU received the B.S. degree in electronics engineering from Seoul National University, Seoul, South Korea, in 1995, the M.S. degree in electronics and electrical engineering from the Pohang University of Science and Technology (POSTECH), Pohang, South Korea, in 2000, and the Ph.D. degree in electrical and computer engineering from the University of Waterloo, Waterloo, ON, Canada, in 2007. From 2000 to 2003, he was with the Telecommunication Research and Development Center, Samsung Electronics, South Korea, where he worked on channel coding schemes for wireless communication systems. In 2007, he was a Senior Research Engineer at LG Electronics, South Korea, working on the standardization of the 3GPP-LTE. From 2008 to 2014, he was an Assistant/Associate Professor with the Department of Electrical Engineering, Lakehead University, Thunder Bay, ON, Canada. In 2014, he joined the Gwangju Institute of Science and Technology (GIST), Gwangju, South Korea, where he is currently working as a Professor with the School of Electrical Engineering and Computer Science. His research interests include sequence design, compressed sensing, and deep learning for wireless communications. He served as an Associate Editor for Sequences in IEEE TRANSACTIONS ON INFORMATION THEORY, from 2009 to 2011. 
 								<br>
@@ -286,16 +286,11 @@
 							</p>
 						</div>
 					</div>	
-					<!-- <br>
-					  
-					<p>
-						<b>Title:</b>
-						<br>
-					<b><a id="toggleAbstractLink">Abstract</a></b>
-					</p>
-					<div id="abstractContent" style="display:none">
-						<p>Your abstract content goes here.</p> -->
-				    </div>
+					 <br>
+					 <!-- <p>
+					<button class="toggleAbstractLink"><img src="images/foldbefore.svg"></button>
+						Your abstract content<span id = dots>...</span><span id = more style="display: none;"> goes here.</span>		    
+					</p> -->
 				</div>
 			</div>
 		</div>
@@ -307,11 +302,16 @@
 <!-- JavaScript to handle button click and show the abstract -->
 <script>
 	document.getElementById("toggleAbstractLink").addEventListener("click", function() {
-		var abstractContent = document.getElementById("abstractContent");
-		if (abstractContent.style.display === "none" || abstractContent.style.display === "") {
-			abstractContent.style.display = "block";
-		} else {
+		var abstractContent = document.getElementById("dots");
+		var moreContent = document.getElementById("more");
+		if (moreContent.style.display === "none" || moreContent.style.display === "") {
+			this.innerHTML = "<img src='images/foldbefore.svg' style='transform: rotate(90deg)'>"
 			abstractContent.style.display = "none";
+			moreContent.style.display = "inline";
+		} else {
+			this.innerHTML = "<img src='images/foldbefore.svg'>"
+			abstractContent.style.display = "inline";
+			moreContent.style.display="none"
 		}
 	});
 </script>  
