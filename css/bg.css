@@ -41,3 +41,9 @@ tbody, td, tfoot, th, thead, tr{
   border-style: solid;
   border-width: 0px; 
   }
+
+  .accordion-button {
+    font-size: 1.2rem;
+    background-color: #d0e2ff;
+  }
+  
