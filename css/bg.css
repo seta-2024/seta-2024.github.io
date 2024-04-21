@@ -44,4 +44,6 @@ tbody, td, tfoot, th, thead, tr{
 
   .accordion-button {
     font-size: 1.2rem;
+    background-color: #d0e2ff;
   }
+  
